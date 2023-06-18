@@ -1,0 +1,10 @@
+
+<!-- Display the value of X in our Parent component -->
+<h4>Parent Component</h4>
+Value of X in Parent = {{x}}
+<hr>
+
+<!-- Child component where we pass the value of X and also the recieve the new 
+     value using emitter.  
+-->
+<app-child [xInChild]="x" (emitMessage)="messageFromChild($event)"></app-child>
